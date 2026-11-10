@@ -3,7 +3,7 @@
   "framework": null,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.9.0"
+      "runtime": "vercel-php@0.8.0"
     }
   },
   "routes": [
@@ -39,4 +39,3 @@
     "VIEW_COMPILED_PATH": "/tmp"
   }
 }
-
