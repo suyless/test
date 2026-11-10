@@ -7,9 +7,10 @@
     }
   },
   "outputDirectory": "public",
+  "buildCommand": "npm run build",
   "rewrites": [
     {
-      "source": "/((?!api/).*)",
+      "source": "/((?!build/|favicon\\.ico|robots\\.txt|.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)).*)",
       "destination": "/api/index.php"
     }
   ],
