@@ -6,14 +6,26 @@
       "runtime": "vercel-php@0.8.0"
     }
   },
-  "outputDirectory": "public",
-  "buildCommand": "npm run build",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!build/|favicon\\.ico|robots\\.txt|.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)).*)",
-      "destination": "/api/index.php"
+      "src": "/build/(.*)",
+      "dest": "/build/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
     }
   ],
+  "outputDirectory": "public",
+  "buildCommand": "npm run build",
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
