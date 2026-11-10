@@ -28,7 +28,8 @@
   "buildCommand": "npm run build",
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "false",
+    "APP_DEBUG": "true",
+    "APP_KEY": "base64:ZBiUgt6U617EwCvQZijqnHLSxOuwJF7C8AMBaRVHSok=",
     "LOG_CHANNEL": "stderr",
     "CACHE_STORE": "array",
     "CACHE_DRIVER": "array",
@@ -38,6 +39,7 @@
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
     "APP_ROUTES_CACHE": "/tmp/routes.php",
     "APP_SERVICES_CACHE": "/tmp/services.php",
-    "VIEW_COMPILED_PATH": "/tmp"
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views",
+    "VERCEL": "1"
   }
 }
